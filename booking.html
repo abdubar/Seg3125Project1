@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Celebrity Cuts</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .main-content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Celebrity Cuts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="experts.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="booking" class="booking my-5">
+            <form id="booking-form" class="d-flex flex-column align-items-center">
+                <div class="services-selection d-flex justify-content-around mb-4">
+                    <div class="service-option text-center mx-3">
+                        <input type="radio" name="service" id="service1" value="Service 1" required>
+                        <label for="service1">
+                            <img src="a2list.jpg" class="img-fluid rounded-circle mb-2" alt="Service 1">
+                            <h4>A-List Celebrity</h4>
+                            <p>High-quality celebrity haircuts and styling services.</p>
+                        </label>
+                    </div>
+                    <div class="service-option text-center mx-3">
+                        <input type="radio" name="service" id="service2" value="Service 2" required>
+                        <label for="service2">
+                            <img src="b2list.png" class="img-fluid rounded-circle mb-2" alt="Service 2">
+                            <h4>B-List Celebrity</h4>
+                            <p>Professional hair coloring and highlights.</p>
+                        </label>
+                    </div>
+                    <div class="service-option text-center mx-3">
+                        <input type="radio" name="service" id="service3" value="Service 3" required>
+                        <label for="service3">
+                            <img src="c2list.jpg" class="img-fluid rounded-circle mb-2" alt="Service 3">
+                            <h4>C-List Celebrity</h4>
+                            <p>Perfect haircuts for children and young teens.</p>
+                        </label>
+                    </div>
+                </div>
+                <input type="name" class="form-control mb-3" placeholder="Enter First and Last Name" style="max-width: 300px;" required>
+                <input type="tel" class="form-control mb-3" placeholder="Enter Phone" style="max-width: 300px;" required>
+                <input type="email" class="form-control mb-3" placeholder="Enter Email" style="max-width: 300px;" required>
+                <button type="submit" class="btn btn-primary">Confirm</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4" style="background-color: #0d6deb;">
+        <div class="container">
+            <p>&copy; 2024 Celebrity Cuts. All rights reserved.</p>
+            <p>Contact us: (123) 456-7890 | info@celebritycuts.com</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'confirmation.html';
+        });
+    </script>
+</body>
+</html>

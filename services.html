@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Celebrity Cuts</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .main-content {
+            flex: 1;
+        }
+        .services .service-box {
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+            background-color: white;
+            cursor: pointer;
+        }
+        .services .service-box:hover {
+            transform: translateY(-10px);
+        }
+        .services .service-box h3 {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .services .service-box p.price {
+            font-size: 1.5em;
+            color: #2F80ED;
+        }
+        .services .service-box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .service-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Celebrity Cuts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="experts.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Services Section -->
+        <section id="services" class="services container my-5">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a href="booking.html" class="service-link">
+                        <div class="service-box">
+                            <img src="a2list.jpg" alt="A-List Celebrity">
+                            <h3>A-List Celebrity</h3>
+                            <p>High-quality celebrity haircuts and styling services.</p>
+                            <p class="price">$60.99</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="booking.html" class="service-link">
+                        <div class="service-box">
+                            <img src="b2list.png" alt="B-List Celebrity">
+                            <h3>B-List Celebrity</h3>
+                            <p>Professional hair coloring and highlights.</p>
+                            <p class="price">$50.99</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="booking.html" class="service-link">
+                        <div class="service-box">
+                            <img src="c2list.jpg" alt="C-List Celebrity">
+                            <h3>C-List Celebrity</h3>
+                            <p>Perfect haircuts for children and young teens.</p>
+                            <p class="price">$39.99</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4" style="background-color: #0d6deb;">
+        <div class="container">
+            <p>&copy; 2024 Celebrity Cuts. All rights reserved.</p>
+            <p>Contact us: (123) 456-7890 | info@celebritycuts.com</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
