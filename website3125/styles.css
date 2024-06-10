@@ -1,0 +1,159 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    flex-shrink: 0;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+}
+
+.services, .testimonials {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+    background: #2F80ED;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+.carousel-item {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    filter: invert(1); /* This ensures that the arrow icons are white when using default Bootstrap icons */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #2F80ED; /* Blue color used in your design */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.bg-light {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-option {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.service-option input[type="radio"] {
+    display: none;
+}
+
+.service-option img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid transparent;
+}
+
+.service-option input[type="radio"]:checked + label img {
+    border: 2px solid #2F80ED;
+}
+
+.service-option label {
+    display: block;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+    }
+
+    .bg-light {
+        margin: 10px;
+    }
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.about, .experts {
+    padding: 60px 0;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-custom {
+    border-radius: 15px; /* Adjust the value to get the desired roundness */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experts img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #2F80ED;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
